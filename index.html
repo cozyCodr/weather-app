@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content="ie=edge" />
+    <link rel='stylesheet' href='./styles.css' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class='container'>
+
+        <!----------- Top Div --------------------------------------->
+        <div class='top-div'>
+            <div class='temperature-description'>Sunny</div>
+            <div id='img-div'><img id='icon' src='#' class='hidden' /></div>
+        </div>
+
+
+        <!----------- Bottom Div ----------------------------------------->
+        <!--City and Date-->
+        <div class='location'>
+
+            <!-- City -->
+            <div class='city-div'>
+                <p id='cityname'>Lusaka, Zambia</p>
+                <p id='current-time'> </p>
+            </div>
+
+            <!-- Temperature -->
+            <div class='degree-section'>
+                <h2 class='temperature-degree'>0</h2>
+                <span>C</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--input bar-->
+    <div id='input-bar'>
+        <h1 class='location-timezone'>
+            <label for='location'>
+                <input id='location' type='text' placeholder='Enter Location' />
+                <button type='submit' id='submit-btn'> Check </button>
+            </label>
+        </h1>
+    </div>
+    <script src='app.js'></script>
+</body>
+
+</html>
