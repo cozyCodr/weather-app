@@ -11,8 +11,8 @@ const localTime = document.getElementById('current-time');
 
 submit.addEventListener('click', () => {
 
-   const proxy = 'http://cors-anywhere.herokuapp.com/';
-   const api = `${proxy}https://api.weatherapi.com/v1/current.json?key=3ead6e9c90da48d7911201423210106&q=${locaTion.value}&aqi=no`;
+   //const proxy = 'http://cors-anywhere.herokuapp.com/';
+   const api = `https://api.weatherapi.com/v1/current.json?key=3ead6e9c90da48d7911201423210106&q=${locaTion.value}&aqi=no`;
 
    fetch(api)
        .then(response => {
